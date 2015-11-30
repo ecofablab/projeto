@@ -62,7 +62,8 @@ header{
 	width: 80%;
 	height: 296px;
 	float: left;
-	margin-left: 22%
+	margin-left: 22%;
+	margin-top: 10%;
 }
 
 #introducao-title{
@@ -83,6 +84,67 @@ header{
 	float: left;
 	margin: 0 0 0 45%;
 	color: #fff;
+}
+
+.nav_scenes{
+	width: 100%;
+	height: 40px;
+	margin: 20% 0 0 94%;
+	position: absolute;
+}
+
+.bullet{
+	cursor: pointer;
+}
+
+.one{
+	width: 100%;
+	height: 35px;
+	background-image: url('../imagem/bullet-1.png'); 
+	background-repeat: no-repeat;
+	background-size: contain;
+}
+
+.one:hover{
+	width: 100%;
+	height: 35px;
+	background-image: url('../imagem/bullet-1-active.png'); 
+	background-repeat: no-repeat;
+	background-size: contain;
+}
+
+.two{
+	width: 100%;
+	height: 35px;
+	background-image: url('../imagem/bullet-2.png');
+	background-repeat: no-repeat;
+	background-size: contain;
+	margin-top: 0.5%;
+}
+
+.two:hover{
+	width: 100%;
+	height: 35px;
+	background-image: url('../imagem/bullet-2-active.png');	
+	background-repeat: no-repeat;
+	background-size: contain;
+}
+
+.three{
+	width: 100%;
+	height: 35px;
+	background-image: url('../imagem/bullet-3.png');
+	background-repeat: no-repeat;
+	background-size: contain;
+	margin-top: 0.5%;
+}
+
+.three:hover{
+	width: 100%;
+	height: 35px;
+	background-image: url('../imagem/bullet-3-active.png');
+	background-repeat: no-repeat;
+	background-size: contain;
 }
 
 #projeto-explore{
@@ -163,6 +225,7 @@ header{
 	font-family: 'AdamDrawn';
 	font-size: 2.222em;
 	color: #fff;
+	margin-top: 15%;
 }
 
 .caixa-texto-texto{

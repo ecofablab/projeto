@@ -24,10 +24,14 @@
 	<script type="text/javascript">
 	$(document).ready(function(){
 
-		$("#div-one").click(function(){
+		$(".one").click(function(){
 			$("#conteudo-projeto").css({"display": "block"});
 
 			$("#introducao-projeto").css({"display": "none"});
+
+			$(".one").addClass("ativo").css({"background-image": "url(imagem/bullet-1-active.png)"});
+			$(".two").removeClass("ativo").css({"background-image": "url(imagem/bullet-2.png)"});
+			$(".three").removeClass("ativo").css({"background-image": "url(imagem/bullet-3.png)"});
 
 			$("#caixa-one").css({"display": "block"});
 			$("#caixa-two").css({"display": "none"});
@@ -35,10 +39,14 @@
 			$("#caixa-four").css({"display": "none"});
 		});
 
-		$("#div-two").click(function(){
+		$(".two").click(function(){
 			$("#conteudo-projeto").css({"display": "block"});
 
 			$("#introducao-projeto").css({"display": "none"});
+
+			$(".one").addClass("ativo").css({"background-image": "url(imagem/bullet-1.png)"});
+			$(".two").removeClass("ativo").css({"background-image": "url(imagem/bullet-2-active.png)"});
+			$(".three").removeClass("ativo").css({"background-image": "url(imagem/bullet-3.png)"});
 			
 			$("#caixa-one").css({"display": "none"});
 			$("#caixa-two").css({"display": "block"});
@@ -46,10 +54,14 @@
 			$("#caixa-four").css({"display": "none"});
 		});
 
-		$("#div-three").click(function(){
+		$(".three").click(function(){
 			$("#conteudo-projeto").css({"display": "block"});
 
 			$("#introducao-projeto").css({"display": "none"});
+
+			$(".one").addClass("ativo").css({"background-image": "url(imagem/bullet-1.png)"});
+			$(".two").removeClass("ativo").css({"background-image": "url(imagem/bullet-2.png)"});
+			$(".three").removeClass("ativo").css({"background-image": "url(imagem/bullet-3-active.png)"});
 			
 			$("#caixa-one").css({"display": "none"});
 			$("#caixa-two").css({"display": "none"});
@@ -212,14 +224,10 @@
 						</div>
 				</div>
 
-				<div id="projeto-explore">
-
-					<div id="explore">
-						<div id="div-one"><p id="title-one" class="title-explore">ECO FAB LAB</p></div>
-						<div id="div-two"><p id="title-two" class="title-explore">POSSIBILIDADES</p></div>
-						<div id="div-three"><p id="title-three" class="title-explore">PÚBLICO</p></div>
-						<div id="div-four"><p id="title-four" class="title-explore">TITULO4</p></div>
-					</div>
+				<div class="nav_scenes">
+					<div class="one bullet ativo"></div>
+					<div class="two bullet"></div>
+					<div class="three bullet"></div>
 				</div>
 			</section>
 	</div>
