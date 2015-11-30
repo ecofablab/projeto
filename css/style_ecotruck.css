@@ -1,0 +1,729 @@
+*{
+	padding: 0;
+    margin: 0;
+    border: 0;
+    list-style: none;
+}
+
+@font-face {
+    font-family: 'AdamDrawn';
+    src: url('../fonts/adamfont-webfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'DrawnBody';
+    src: url('../fonts/drawnbody-webfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body{
+	max-width:1200px; /*largura máxima do layout*/
+	width: 90%; /*ajuste do layout à tela*/
+	height: 600px;
+	background-image: url('../imagem/grain.png'); 
+	background-color: #333333;
+}
+
+#scene_one{
+	width: 100%;
+	position: absolute;
+	margin-top: 8.333%;
+	display: block;
+}
+
+#scene_two{
+	width: 100%;
+	position: absolute;
+	margin-top: 8.333%;
+	display: none;
+}
+
+#scene_three{
+	width: 100%;
+	position: absolute;
+	margin-top: 8.333%;
+	display: none;
+}
+
+#scene_four{
+	width: 100%;
+	position: absolute;
+	margin-top: 8.333%;
+	display: none;
+}
+
+#scene_five{
+	width: 100%;
+	position: absolute;
+	margin-top: 8.333%;
+	display: none;
+}
+
+.title{
+	font-family: 'AdamDrawn';
+	font-size: 8.375em;
+	color: #fff;
+	text-align: center;
+}
+
+.text{
+	font-family: 'AdamDrawn';
+	font-size: 1.875em;
+	color: #605f5f;
+	text-align: center;
+}
+
+.btn-saber{
+	width: 11.166%;
+	height: 40px;
+	background-image: url('../imagem/saber-mais.png');
+	margin: auto;
+	margin-top: 1%;
+}
+
+.nav_scenes{
+	width: 100%;
+	height: 40px;
+	margin: 1% 0 0 42.708%;
+}
+
+.bullet{
+	float: left;
+	cursor: pointer;
+}
+
+.one{
+	width: 2.916%;
+	height: 35px;
+	background-image: url('../imagem/bullet-1.png'); 
+}
+
+.one:hover{
+	width: 2.916%;
+	height: 35px;
+	background-image: url('../imagem/bullet-1-active.png'); 
+}
+
+.two{
+	width: 2.916%;
+	height: 35px;
+	background-image: url('../imagem/bullet-2.png');
+}
+
+.two:hover{
+	width: 2.916%;
+	height: 35px;
+	background-image: url('../imagem/bullet-2-active.png');	
+}
+
+.three{
+	width: 2.916%;
+	height: 35px;
+	background-image: url('../imagem/bullet-6.png');
+}
+
+.three:hover{
+	width: 2.916%;
+	height: 35px;
+	background-image: url('../imagem/bullet-6-active.png');	
+}
+
+.four{
+	width: 2.916%;
+	height: 35px;
+	background-image: url('../imagem/bullet-4.png');	
+}
+
+.four:hover{
+	width: 2.916%;
+	height: 35px;
+	background-image: url('../imagem/bullet-4-active.png');	
+}
+
+.five{
+	width: 2.916%;
+	height: 35px;
+	background-image: url('../imagem/bullet-3.png');
+}
+
+.five:hover{
+	width: 2.916%;
+	height: 35px;
+	background-image: url('../imagem/bullet-3-active.png');
+}
+
+header{
+	width: 100%;
+	margin: 3% 0 0 75%;
+}
+
+
+#nav li{
+	display: inline-block;
+	margin-left: 1.666%;	
+}
+
+#nav li a{
+	font-size: 1.125em;
+	font-family: 'AdamDrawn';
+	text-decoration: none;
+	color: #fff;
+}
+
+#nav li a:hover{
+	color: #bcbcbc;
+}
+
+/*.barra{
+	background-image: url('../imagem/barra.png'); 
+	width: 0.833%;
+	height: 15px;
+    margin-top: 0.166%
+}*/
+
+#projeto{
+	position: absolute;
+}
+
+#about-project{
+	width: 600px;
+	height: 508px;
+	background-image: url('../imagem/about.png');
+	margin: 70px 0 0 280px;
+}
+
+#about-project:hover{
+	background-image: url('../imagem/about-active.png');
+}
+
+.btn-explore{
+	width: 122px;
+	height: 44px;
+	background-image: url('../imagem/explore.png');
+	position: absolute;
+	margin: 230px 0 0 525px;
+}
+
+#options{
+	display: none;
+}
+
+#quadrado-um{
+	width: 320px;
+	height: 344px;
+	background-image: url('../imagem/quem.png');
+	margin: 100px 0 0 25px;
+}
+
+#quadrado-dois{
+	width: 320px;
+	height: 344px;
+	background-image: url('../imagem/printer3d.png');
+	background-repeat: no-repeat;
+	background-position: center;
+	margin: -345px 0 0 425px;
+}
+
+#quadrado-tres{
+	width: 320px;
+	height: 344px;
+	background-image: url('../imagem/earth.png');
+	margin: -345px 0 0 825px;
+}
+
+#ecofablabs{
+	display: none;
+}
+
+#quem-pode{
+	display: none;
+}
+
+#img-quem{
+	width: 600px;
+	height: 508px;
+	background-image: url('../imagem/about.png');
+	margin: -200px 0 0 0px;	
+}
+
+#beneficios{
+	display: none;
+}
+
+.title-projeto{
+	font-family: 'AdamDrawn';
+	font-size: 40px;
+	color: #fff;
+	margin: 100px 0 0 500px;
+}
+
+.text-projeto{
+	font-family: 'DrawnBody';
+	color: #fff;
+	margin: 20px 0 0 500px;	
+}
+
+#problema{
+	position: absolute;
+}
+
+#problema-one{
+}
+
+#problema-two{
+	display: none;
+}
+
+#problema-hand{
+	width: 350px;
+	height: 350px;
+	background-image: url('../imagem/hand.png');
+	margin: 150px 0 0 420px;	
+}
+
+#section-problema-two{
+	display: none;
+}
+
+#section-problema-three{
+	display: none;
+}
+
+#section-problema-four{
+	display: none;
+}
+
+#section-problema-five{
+	display: none;
+}
+
+#hand1{
+	width: 235px;
+	height: 443px;
+	background-image: url('../imagem/hand1.png');
+	margin: -330px 0 0 225px;
+}
+
+#hand2{
+	width: 235px;
+	height: 443px;
+	background-image: url('../imagem/hand2.png');
+	margin: -330px 0 0 225px;
+}
+
+#hand3{
+	width: 235px;
+	height: 443px;
+	background-image: url('../imagem/hand3.png');
+	margin: -330px 0 0 225px;
+}
+
+#hand4{
+	width: 235px;
+	height: 443px;
+	background-image: url('../imagem/hand4.png');
+	margin: -330px 0 0 225px;
+}
+
+#hand5{
+	width: 235px;
+	height: 443px;
+	background-image: url('../imagem/hand5.png');
+	margin: -330px 0 0 225px;
+}
+
+.title-problema{
+	font-family: 'AdamDrawn';
+	font-size: 40px;
+	color: #fff;
+	margin: 150px 0 0 500px;
+}
+
+.text-problema{
+	font-family: 'DrawnBody';
+	color: #fff;
+	margin: 20px 0 0 500px;	
+}
+
+#problema-nav{
+	margin: -50px 0 0 500px;
+	display: none;
+}
+
+.btn-back{
+	width: 41px;
+	height: 42px;
+	background-image: url('../imagem/back.png');
+	float: left;
+}
+
+.btn-next{
+	width: 41px;
+	height: 42px;
+	background-image: url('../imagem/next.png');
+	margin-left: 50px;
+}
+
+#ecotruck{
+	position: absolute;
+}
+
+.title-ecotruck{
+	font-family: 'AdamDrawn';
+	font-size: 40px;
+	color: #fff;
+	margin: 150px 0 0 500px;
+}
+
+.text-ecotruck{
+	font-family: 'DrawnBody';
+	color: #fff;
+	margin: 20px 0 0 500px;	
+}
+
+
+/*
+1200px – Desktops, notebooks com monitores widescreen
+***********************************************************/
+@media screen and (max-width: 1200px){
+  
+}
+/*
+960px – Tablets no formato paisagem e alguns monitores mais antigos
+***********************************************************/
+@media screen and (max-width: 960px){
+	header{
+		margin: 3% 0 0 68.75%;
+	}
+
+	.btn-saber{
+	width: 13.958%;
+	height: 40px;
+	}
+
+	.barra{
+		width: 1.041%;
+	}
+
+	.nav_scenes{
+		margin: 1% 0 0 40.885%
+	}
+
+	.one{
+		width: 3.645%;
+		height: 35px;
+		background-image: url('../imagem/bullet-1-active.png'); 
+	}
+
+	.one:hover{
+		width: 3.645%;
+		height: 35px;
+		background-image: url('../imagem/bullet-1-active.png'); 
+	}
+
+	.two{
+		width: 3.645%;
+		height: 35px;
+		background-image: url('../imagem/bullet-2.png');
+	}
+
+	.two:hover{
+		width: 3.645%;
+		height: 35px;
+		background-image: url('../imagem/bullet-2-active.png');	
+	}
+
+	.three{
+		width: 3.645%;
+		height: 35px;
+		background-image: url('../imagem/bullet-6.png');
+	}
+
+	.three:hover{
+		width: 3.645%;
+		height: 35px;
+		background-image: url('../imagem/bullet-6-active.png');	
+	}
+
+	.four{
+		width: 3.645%;
+		height: 35px;
+		background-image: url('../imagem/bullet-4.png');	
+	}
+
+	.four:hover{
+		width: 3.645%;
+		height: 35px;
+		background-image: url('../imagem/bullet-4-active.png');	
+	}
+
+	.five{
+		width: 3.645%;
+		height: 35px;
+		background-image: url('../imagem/bullet-3.png');
+	}   
+
+	.five:hover{
+		width: 3.645%;
+		height: 35px;
+		background-image: url('../imagem/bullet-3-active.png');	
+	}       
+}
+/*
+768px – Tablets no formato retrato, como o iPad
+***********************************************************/
+@media screen and (max-width: 768px){
+	header{
+		margin: 3% 0 0 60.937%;
+	}
+
+	.btn-saber{
+	width: 17.447%;
+	height: 40px;
+	}
+
+	.barra{
+		width: 1.302%;
+	}
+
+	.nav_scenes{
+		margin: 1% 0 0 38.606%
+	}
+
+	.one{
+		width: 4.557%;
+		height: 35px;
+		background-image: url('../imagem/bullet-1-active.png'); 
+	}
+
+	.one:hover{
+		width: 4.557%;
+		height: 35px;
+		background-image: url('../imagem/bullet-1-active.png'); 
+	}
+
+	.two{
+		width: 4.557%;
+		height: 35px;
+		background-image: url('../imagem/bullet-2.png');
+	}
+
+	.two:hover{
+		width: 4.557%;
+		height: 35px;
+		background-image: url('../imagem/bullet-2-active.png');
+	}
+
+	.three{
+		width: 4.557%;
+		height: 35px;
+		background-image: url('../imagem/bullet-6.png');
+	}
+
+	.three:hover{
+		width: 4.557%;
+		height: 35px;
+		background-image: url('../imagem/bullet-6-active.png');
+	}
+
+	.four{
+		width: 4.557%;
+		height: 35px;
+		background-image: url('../imagem/bullet-4.png');	
+	}
+
+	.four:hover{
+		width: 4.557%;
+		height: 35px;
+		background-image: url('../imagem/bullet-4-active.png');
+	}
+
+	.five{
+		width: 4.557%;
+		height: 35px;
+		background-image: url('../imagem/bullet-3.png');
+	} 
+
+	.five:hover{
+		width: 4.557%;
+		height: 35px;
+		background-image: url('../imagem/bullet-3-active.png');
+	}   
+}
+/*
+480px – Smartphones no formato paisagem com tela pequena
+***********************************************************/
+@media screen and (max-width: 480px){
+	header{
+		margin: 3% 0 0 30%;
+	}
+
+	.btn-saber{
+	width: 27.916%;
+	height: 40px;
+	}
+
+	.barra{
+		width: 2.083%;
+	}
+
+	.nav_scenes{
+		margin: 1% 0 0 31.770%
+	}
+
+	.one{
+		width: 7.291%;
+		height: 35px;
+		background-image: url('../imagem/bullet-1-active.png'); 
+	}
+
+	.one:hover{
+		width: 7.291%;
+		height: 35px;
+		background-image: url('../imagem/bullet-1-active.png'); 
+	}
+
+	.two{
+		width: 7.291%;
+		height: 35px;
+		background-image: url('../imagem/bullet-2.png');
+	}
+
+	.two:hover{
+		width: 7.291%;
+		height: 35px;
+		background-image: url('../imagem/bullet-2-active.png');
+	}
+
+	.three{
+		width: 7.291%;
+		height: 35px;
+		background-image: url('../imagem/bullet-6.png');
+	}
+
+	.three:hover{
+		width: 7.291%;
+		height: 35px;
+		background-image: url('../imagem/bullet-6-active.png');
+	}
+
+	.four{
+		width: 7.291%;
+		height: 35px;
+		background-image: url('../imagem/bullet-4.png');	
+	}
+
+	.four:hover{
+		width: 7.291%;
+		height: 35px;
+		background-image: url('../imagem/bullet-4-active.png');
+	}
+
+	.five{
+		width: 7.291%;
+		height: 35px;
+		background-image: url('../imagem/bullet-3.png');
+	}    	
+
+	.five:hover{
+		width: 7.291%;
+		height: 35px;
+		background-image: url('../imagem/bullet-3-active.png');
+	}     
+}
+/*
+320px – Smartphones no formato retrato com tela pequena
+***********************************************************/
+@media screen and (max-width: 320px){
+	#scene_one{
+		margin-top: 40%;
+	}
+
+	.title{
+		font-size: 6em;
+	}
+
+	.text{
+		font-size: 1em;
+	}
+
+	.btn-saber{
+	width: 41.875%;
+	height: 40px;
+	}
+
+	header{
+		margin: 3% 0 0 20%;
+	}
+
+	.barra{
+		width: 3.125%;
+	}
+
+	.nav_scenes{
+		margin: 1% 0 0 22.656%
+	}
+
+	.one{
+		width: 10.937%;
+		height: 35px;
+		background-image: url('../imagem/bullet-1-active.png'); 
+	}
+
+	.one:hover{
+		width: 10.937%;
+		height: 35px;
+		background-image: url('../imagem/bullet-1-active.png'); 
+	}
+
+	.two{
+		width: 10.937%;
+		height: 35px;
+		background-image: url('../imagem/bullet-2.png');
+	}
+
+	.two:hover{
+		width: 10.937%;
+		height: 35px;
+		background-image: url('../imagem/bullet-2-active.png');
+	}
+
+	.three{
+		width: 10.937%;
+		height: 35px;
+		background-image: url('../imagem/bullet-6.png');
+	}
+
+	.three:hover{
+		width: 10.937%;
+		height: 35px;
+		background-image: url('../imagem/bullet-6-active.png');
+	}
+
+	.four{
+		width: 10.937%;
+		height: 35px;
+		background-image: url('../imagem/bullet-4.png');	
+	}
+
+	.four:hover{
+		width: 10.937%;
+		height: 35px;
+		background-image: url('../imagem/bullet-4-active.png');
+	}
+
+	.five{
+		width: 10.937%;
+		height: 35px;
+		background-image: url('../imagem/bullet-3.png');
+	}      
+
+	.five:hover{
+		width: 10.937%;
+		height: 35px;
+		background-image: url('../imagem/bullet-3-active.png');
+	} 
+}

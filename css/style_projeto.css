@@ -1,0 +1,222 @@
+*{
+	padding: 0;
+    margin: 0;
+    border: 0;
+    list-style: none;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: 'AdamDrawn';
+    src: url('../fonts/adamfont-webfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'DrawnBody';
+    src: url('../fonts/drawnbody-webfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body{
+	max-width:1200px; /*largura máxima do layout*/
+	width: 90%; /*ajuste do layout à tela*/
+	height: 600px;
+	background-image: url('../imagem/bg.jpg'); 
+}
+
+header{
+	width: 100%;
+	margin: 3% 0 0 80%;
+}
+
+#nav li{
+	display: inline-block;
+	margin-left: 1.666%;	
+}
+
+#nav li a{
+	font-size: 1.125em;
+	font-family: 'AdamDrawn';
+	text-decoration: none;
+	color: #fff;
+}
+
+#nav li a:hover{
+	color: #bcbcbc;
+}
+
+#selected{
+	width: 100%;
+	height: 1px;
+	background-color: #fff;
+}
+
+#projeto{
+	width: 100%;
+}
+
+#introducao-projeto{
+	width: 80%;
+	height: 296px;
+	float: left;
+	margin-left: 22%
+}
+
+#introducao-title{
+	font-family: 'AdamDrawn';
+	font-size: 2.222em;
+	color: #fff;
+}
+
+#introducao-text{
+	font-family: 'DrawnBody';
+	color: #fff;
+	margin: 2% 0 0 0%
+}
+
+#intro-projeto{
+	font-family: 'AdamDrawn';
+	font-size: 2.222em;
+	float: left;
+	margin: 0 0 0 45%;
+	color: #fff;
+}
+
+#projeto-explore{
+	width: 264px;	
+}
+
+#explore{
+	margin: 50% 0 0 0;
+}
+
+.title-explore{
+	font-family: 'DrawnBody';
+	font-size: 1.5em;
+	color: #fff;
+	margin: 1.9% 0 0 1%;
+	position: absolute;
+	display: none;
+}
+
+#div-one{
+	width: 9.469%;
+	height: 74px;
+	background-color: #ff7700;
+}
+
+#div-one:hover{
+	-webkit-transition: width 0.5s;
+    transition: width 0.5s;
+	width: 94.696%;
+}
+
+#div-two{
+	width: 9.469%;
+	height: 74px;
+	background-color: #86c700;
+}
+
+#div-two:hover{
+	-webkit-transition: width 0.5s;
+    transition: width 0.5s;
+	width: 94.696%;
+}
+
+#div-three{
+	width: 9.469%;
+	height: 74px;
+	background-color: #f07a5c;
+}
+
+#div-three:hover{
+	-webkit-transition: width 0.5s;
+    transition: width 0.5s;
+	width: 94.696%;
+}
+
+#div-four{
+	width: 9.469%;
+	height: 74px;
+	background-color: #373737;
+	
+}
+
+#div-four:hover{
+	-webkit-transition: width 0.5s;
+    transition: width 0.5s;
+	width: 94.696%;
+}
+
+#conteudo-projeto{
+	width: 80%;
+	height: 296px;
+	float: left;
+	margin-left: 22%;
+	display: none;
+}
+
+.caixa-texto-title{
+	font-family: 'AdamDrawn';
+	font-size: 2.222em;
+	color: #fff;
+}
+
+.caixa-texto-texto{
+	font-family: 'DrawnBody';
+	margin: 2% 0 0 0%;
+	color: #fff;
+}
+
+.paragrafo-two{
+	margin: 2% 0 0 5%;
+}
+
+/*
+960px – Tablets no formato paisagem e alguns monitores mais antigos
+***********************************************************/
+@media screen and (max-width: 960px){
+	header{
+		margin: 3% 0 0 75%;
+	}
+}
+/*
+768px – Tablets no formato retrato, como o iPad
+***********************************************************/
+@media screen and (max-width: 768px){
+	header{
+		margin: 3% 0 0 65%;
+	} 
+}
+/*
+480px – Smartphones no formato paisagem com tela pequena
+***********************************************************/
+@media screen and (max-width: 480px){
+	header{
+		margin: 3% 0 0 28%;
+	}  
+}
+/*
+320px – Smartphones no formato retrato com tela pequena
+***********************************************************/
+@media screen and (max-width: 320px){
+	header{
+		margin: 3% 0 0 3.5%;
+	}
+
+	#nav li{
+		display: block;
+		text-align: center;
+		font-size: 1.5em;
+		margin: 5% 0 0 0;
+	}
+
+	.responsive{
+		width: 100%;
+		height: 1px;
+		background-color: #fff;
+	}
+}

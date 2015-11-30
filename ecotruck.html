@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+	<!--*****CHARSET*****-->
+
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=divice-width, initial-scale=1.0">
+
+	<!--*****CSS*****-->
+
+	<link rel="stylesheet" href="css/style_ecotruck.css" type="text/css">
+
+	<!--*****JQUERY*****-->
+
+	<script type="text/javascript" src="js/jquery-2.1.4.min.js"></script>
+
+	<!--*****TITULO DO SITE*****-->
+
+	<title>Eco FabLabs</title>
+
+	<!--*****JAVASCRIPT*****-->
+
+	<script type="text/javascript">
+	$(document).ready(function(){
+
+		$(".one").click(function(){
+			$("body").css({"background-color":"#333333"});
+
+			$("#scene_one").css({"display": "block"});
+			$("#scene_two").css({"display": "none"});
+			$("#scene_three").css({"display": "none"});
+			$("#scene_four").css({"display": "none"});
+			$("#scene_five").css({"display": "none"});
+
+			$(".one").addClass("ativo").css({"background-image": "url(imagem/bullet-1-active.png)"});
+			$(".two").css({"background-image": "url(imagem/bullet-2.png)"});
+			$(".three").css({"background-image": "url(imagem/bullet-6.png)"});
+			$(".four").css({"background-image": "url(imagem/bullet-4.png)"});
+			$(".five").css({"background-image": "url(imagem/bullet-3.png)"});
+		});
+
+		$(".two").click(function(){
+			$("body").css({"background-color":"#c1d43f"});
+
+			$("#scene_one").css({"display": "none"});
+			$("#scene_two").css({"display": "block"});
+			$("#scene_three").css({"display": "none"});
+			$("#scene_four").css({"display": "none"});
+			$("#scene_five").css({"display": "none"});
+
+			$(".one").css({"background-image": "url(imagem/bullet-1.png)"});
+			$(".two").addClass("ativo").css({"background-image": "url(imagem/bullet-2-active.png)"});
+			$(".three").css({"background-image": "url(imagem/bullet-6.png)"});
+			$(".four").css({"background-image": "url(imagem/bullet-4.png)"});
+			$(".five").css({"background-image": "url(imagem/bullet-3.png)"});
+		});
+
+		$(".three").click(function(){
+			$("body").css({"background-color":"#05c1c0"});
+
+			$("#scene_one").css({"display": "none"});
+			$("#scene_two").css({"display": "none"});
+			$("#scene_three").css({"display": "block"});
+			$("#scene_four").css({"display": "none"});
+			$("#scene_five").css({"display": "none"});
+
+			$(".one").css({"background-image": "url(imagem/bullet-1.png)"});
+			$(".two").css({"background-image": "url(imagem/bullet-2.png)"});
+			$(".three").addClass("ativo").css({"background-image": "url(imagem/bullet-6-active.png)"});
+			$(".four").css({"background-image": "url(imagem/bullet-4.png)"});
+			$(".five").css({"background-image": "url(imagem/bullet-3.png)"});
+		});
+
+		$(".four").click(function(){
+			$("body").css({"background-color":"#c1d43f"});
+
+			$("#scene_one").css({"display": "none"});
+			$("#scene_two").css({"display": "none"});
+			$("#scene_three").css({"display": "none"});
+			$("#scene_four").css({"display": "block"});
+			$("#scene_five").css({"display": "none"});
+
+			$(".one").css({"background-image": "url(imagem/bullet-1.png)"});
+			$(".two").css({"background-image": "url(imagem/bullet-2.png)"});
+			$(".three").css({"background-image": "url(imagem/bullet-6.png)"})
+			$(".four").addClass("ativo").css({"background-image": "url(imagem/bullet-4-active.png)"});
+			$(".five").css({"background-image": "url(imagem/bullet-3.png)"});
+		});
+
+		$(".five").click(function(){
+			$("body").css({"background-color":"#BFBFBF"});
+
+			$("#scene_one").css({"display": "none"});
+			$("#scene_two").css({"display": "none"});
+			$("#scene_three").css({"display": "none"});
+			$("#scene_four").css({"display": "none"});
+			$("#scene_five").css({"display": "block"});
+
+			$(".one").css({"background-image": "url(imagem/bullet-1.png)"});
+			$(".two").css({"background-image": "url(imagem/bullet-2.png)"});
+			$(".three").css({"background-image": "url(imagem/bullet-6.png)"})
+			$(".four").css({"background-image": "url(imagem/bullet-4.png)"});
+			$(".five").addClass("ativo").css({"background-image": "url(imagem/bullet-3-active.png)"});
+		});
+
+		$(".btn-saber").mouseover(function(){
+			$(".btn-saber").css({"background-image": "url(imagem/saber-mais-active.png)"});
+		});
+
+		$(".btn-saber").mouseout(function(){
+			$(".btn-saber").css({"background-image": "url(imagem/saber-mais.png)"});
+		});
+
+		$(".btn-explore").mouseover(function(){
+			$(".btn-explore").css({"background-image": "url(imagem/explore-active.png)"});
+		});
+
+		$(".btn-explore").mouseout(function(){
+			$(".btn-explore").css({"background-image": "url(imagem/explore.png)"});
+		});
+
+		$(".btn-projeto").click(function(){
+			$("body").css({"background-color":"#333333"});
+			
+			$("#home").css({"display": "none"});
+
+			$("#projeto-explore").css({"display": "block"});
+		});
+
+		$(".btn-problema").click(function(){
+			$("body").css({"background-color":"#e59eb6"});
+			
+			$("#home").css({"display": "none"});
+
+			$("#problema-one").css({"display": "block"});
+		});
+
+		$(".btn-ecotruck").click(function(){
+			$("#home").css({"display": "none"});
+
+			$("#ecotruck").css({"display": "block"});
+		});
+
+		$(".btn-explore").click(function(){
+			$("#projeto-explore").css({"display": "none"});
+
+			$("#options").css({"display": "block"});
+			$("#sections-projeto").css({"display": "block"});
+		});
+
+		$("#quadrado-um").click(function(){
+			$("#options").css({"display": "none"});
+
+			$("#quem-pode").css({"display": "block"});
+		});
+
+		$("#quadrado-dois").click(function(){
+			$("#options").css({"display": "none"});
+
+			$("#ecofablabs").css({"display": "block"});
+		});
+
+		$("#quadrado-tres").click(function(){
+			$("#options").css({"display": "none"});
+
+			$("#beneficios").css({"display": "block"});
+		});
+
+		$("#problema-hand").click(function(){
+			$("#problema-one").css({"display": "none"});
+
+			$("#problema-nav").css({"display": "block"});
+			$("#problema-two").css({"display": "block"});
+		});
+
+		$(".btn-next").click(function(){
+			if($("#problema-two div:visible").next().length !=0){
+				$("#problema-two div:visible").next().show().prev().hide();
+			}else{
+				$("#problema-two div:visible").hide();
+            	$("#problema-two div:first").show();	
+			}
+		});
+
+		$(".btn-back").click(function(){
+			if($("#problema-two div:visible").prev().length !=0){
+				$("#problema-two div:visible").prev().show().next().hide();
+			}else{
+				$("#problema-two div:visible").hide();
+            	$("#problema-two div:last").show();
+			}
+		});
+
+		$(".home-nav").click(function(){
+			$("body").css({"background-color":"#333333"});
+			
+			$("#home").css({"display": "block"});
+			$("#projeto").css({"display": "none"});
+			$("#problema").css({"display": "none"});
+			$("#ecotruck").css({"display": "none"});
+		});
+
+		/*$(".projeto-nav").click(function(){
+			$("body").css({"background-color":"#333333"});
+			
+			$("#home").css({"display": "none"});
+			$("#sections-projeto").css({"display": "none"});
+			$("#projeto").css({"display": "block"});
+			$("#projeto-explore").css({"display": "block"});
+			$("#problema").css({"display": "none"});
+			$("#ecotruck").css({"display": "none"});
+		});
+
+		$(".problema-nav").click(function(){
+			$("body").css({"background-color":"#e59eb6"});
+
+			$("#home").css({"display": "none"});
+			$("#projeto").css({"display": "none"});
+			$("#problema").css({"display": "block"});
+			$("#problema-one").css({"display": "block"});
+			$("#ecotruck").css({"display": "none"});
+		});
+
+		$(".ecotruck-nav").click(function(){
+			$("body").css({"background-color":"#BFBFBF"});
+			
+			$("#home").css({"display": "none"});
+			$("#projeto").css({"display": "none"});
+			$("#problema").css({"display": "none"});
+			$("#ecotruck").css({"display": "block"});
+			$("#ecotruck-pag").css({"display": "block"});
+		});*/
+
+		/*setInterval(slide,3000);
+
+		function slide(){
+			if($(".ativo").next().size()){
+				if($(".ativo").next().attr('class') == "two bullet"){
+					$(".ativo").css({"background-image": "url(imagem/bullet-1.png)"}).removeClass("ativo").next().fadeIn().addClass("ativo").css({"background-image": "url(imagem/bullet-2-active.png)"});
+
+					$("body").css({"background-color":"#dcdcdc"});
+
+					$("#scene_one").css({"display": "none"});
+					$("#scene_two").css({"display": "block"});
+					$("#scene_three").css({"display": "none"});
+					$("#scene_four").css({"display": "none"});
+					$("#scene_five").css({"display": "none"});
+				}
+
+				else if($(".ativo").next().attr('class') == "three bullet"){
+					$(".ativo").css({"background-image": "url(imagem/bullet-2.png)"}).removeClass("ativo").next().fadeIn().addClass("ativo").css({"background-image": "url(imagem/bullet-6-active.png)"});
+
+					$("body").css({"background-color":"#333333"});
+
+					$("#scene_one").css({"display": "none"});
+					$("#scene_two").css({"display": "none"});
+					$("#scene_three").css({"display": "block"});
+					$("#scene_four").css({"display": "none"});
+					$("#scene_five").css({"display": "none"});
+				}
+
+				else if($(".ativo").next().attr('class') == "four bullet"){
+					$(".ativo").css({"background-image": "url(imagem/bullet-6.png)"}).removeClass("ativo").next().fadeIn().addClass("ativo").css({"background-image": "url(imagem/bullet-4-active.png)"});
+
+					$("body").css({"background-color":"#26a65b"});
+
+					$("#scene_one").css({"display": "none"});
+					$("#scene_two").css({"display": "none"});
+					$("#scene_three").css({"display": "none"});
+					$("#scene_four").css({"display": "block"});
+					$("#scene_five").css({"display": "none"});
+				}
+
+				else if($(".ativo").next().attr('class') == "five bullet"){
+					$(".ativo").css({"background-image": "url(imagem/bullet-4.png)"}).removeClass("ativo").next().fadeIn().addClass("ativo").css({"background-image": "url(imagem/bullet-3-active.png)"});
+
+					$("body").css({"background-color":"#dcdcdc"});
+
+					$("#scene_one").css({"display": "none"});
+					$("#scene_two").css({"display": "none"});
+					$("#scene_three").css({"display": "none"});
+					$("#scene_four").css({"display": "none"});
+					$("#scene_five").css({"display": "block"});
+				}
+				
+			}else {
+				$(".ativo").css({"background-image": "url(imagem/bullet-3.png)"}).removeClass("ativo");	
+				$(".one").fadeIn().css({"background-image": "url(imagem/bullet-1-active.png)"}).addClass("ativo");
+
+				$("body").css({"background-color":"#333333"});
+
+				$("#scene_one").css({"display": "block"});
+				$("#scene_two").css({"display": "none"});
+				$("#scene_three").css({"display": "none"});
+				$("#scene_four").css({"display": "none"});
+				$("#scene_five").css({"display": "none"});
+			}	
+		}*/
+	});
+</script>
+
+</head>
+<body>
+	<div id="container">
+		
+		<header>
+			<div id="nav">
+				<nav id="header_nav">
+					<li class="active">
+						<a href="index.html" class="home-nav"><div id="teste">INÍCIO</div></a>
+					</li>
+					<li>
+						<a href="projeto.html" class="projeto-nav">O PROJETO</a>
+					</li>
+					<li>
+						<a href="problema.html" class="problema-nav">O PROBLEMA</a>
+					</li>
+					<li>
+						<a href="ecotruck.html" class="ecotruck-nav">ECOTRUCK</a>
+					</li>
+					<li>
+						<a href="contato.html" class="contato-nav">CONTATO</a>
+					</li>
+				</nav>
+			</div>
+		</header>
+
+			<!--*****ECOTRUCK*****-->
+
+			<section id="ecotruck">
+				<div id="ecotruck-pag">
+					<p class="title-ecotruck">ECOTRUCK</p>
+					<p class="text-ecotruck">O ECOTruck vai levar o conceito da nossa ECOFabLab para as comunidades,</br>
+					disponibilizando cursos, palestras e técnicos especializados no manuseio de</br>
+					máquinas para a comunidade, levando também o conhecimento de uma Fab-</br>
+					Lab, gerando empregos, acesso a informação, oportunidades de conhecimen-</br>
+					to, educação, inclusão social, conscientização, realização de sonhos e expe-</br>riências.  </p>
+				</div>
+			</section>
+
+		</div>
+
+		<!--*****FIM SEÇÕES SITE*****-->
+		
+	</div>
+</body>
+</html>

@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+	<!--*****CHARSET*****-->
+
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=divice-width, initial-scale=1.0">
+
+	<!--*****CSS*****-->
+
+	<link rel="stylesheet" href="css/style_projeto.css" type="text/css">
+
+	<!--*****JQUERY*****-->
+
+	<script type="text/javascript" src="js/jquery-2.1.4.min.js"></script>
+
+	<!--*****TITULO DO SITE*****-->
+
+	<title>Eco FabLabs</title>
+
+	<!--*****JAVASCRIPT*****-->
+
+	<script type="text/javascript">
+	$(document).ready(function(){
+
+		$("#div-one").click(function(){
+			$("#conteudo-projeto").css({"display": "block"});
+
+			$("#introducao-projeto").css({"display": "none"});
+
+			$("#caixa-one").css({"display": "block"});
+			$("#caixa-two").css({"display": "none"});
+			$("#caixa-three").css({"display": "none"});
+			$("#caixa-four").css({"display": "none"});
+		});
+
+		$("#div-two").click(function(){
+			$("#conteudo-projeto").css({"display": "block"});
+
+			$("#introducao-projeto").css({"display": "none"});
+			
+			$("#caixa-one").css({"display": "none"});
+			$("#caixa-two").css({"display": "block"});
+			$("#caixa-three").css({"display": "none"});
+			$("#caixa-four").css({"display": "none"});
+		});
+
+		$("#div-three").click(function(){
+			$("#conteudo-projeto").css({"display": "block"});
+
+			$("#introducao-projeto").css({"display": "none"});
+			
+			$("#caixa-one").css({"display": "none"});
+			$("#caixa-two").css({"display": "none"});
+			$("#caixa-three").css({"display": "block"});
+			$("#caixa-four").css({"display": "none"});
+		});
+
+		$("#div-four").click(function(){
+			$("#conteudo-projeto").css({"display": "block"});
+
+			$("#introducao-projeto").css({"display": "none"});
+			
+			$("#caixa-one").css({"display": "none"});
+			$("#caixa-two").css({"display": "none"});
+			$("#caixa-three").css({"display": "none"});
+			$("#caixa-four").css({"display": "block"});
+		});
+
+		$("#div-one").mouseover(function(){
+			$("#title-one").css({"display": "block"});
+		});
+
+		$("#div-one").mouseout(function(){
+			$("#title-one").css({"display": "none"});
+		});
+
+		$("#div-two").mouseover(function(){
+			$("#title-two").css({"display": "block"});
+		});
+
+		$("#div-two").mouseout(function(){
+			$("#title-two").css({"display": "none"});
+		});
+
+		$("#div-three").mouseover(function(){
+			$("#title-three").css({"display": "block"});
+		});
+
+		$("#div-three").mouseout(function(){
+			$("#title-three").css({"display": "none"});
+		});
+
+		$("#div-three").mouseover(function(){
+			$("#title-three").css({"display": "block"});
+		});
+
+		$("#div-three").mouseout(function(){
+			$("#title-three").css({"display": "none"});
+		});
+
+		$("#div-four").mouseover(function(){
+			$("#title-four").css({"display": "block"});
+		});
+
+		$("#div-four").mouseout(function(){
+			$("#title-four").css({"display": "none"});
+		});
+
+	});
+</script>
+
+</head>
+<body>
+	<div id="container">
+		
+		<header>
+			<div id="nav">
+				<nav id="header_nav">
+					<li class="active">
+						<a href="index.html" class="home-nav">INÍCIO<div class="responsive"></div></a>
+					</li>
+					<li>
+						<a href="projeto.html" class="projeto-nav">O PROJETO<div id="selected"></div></a>
+					</li>
+					<li>
+						<a href="problema.html" class="problema-nav">O PROBLEMA<div class="responsive"></div></a>
+					</li>
+					<li>
+						<a href="ecotruck.html" class="ecotruck-nav">ECOTRUCK</a>
+					</li>
+				</nav>
+			</div>
+		</header>
+
+			<!--*****PROJETO*****-->
+
+			<section id="projeto">
+
+				<div id="introducao-projeto">
+					<p id="introducao-title">O QUE É UMA FAB LAB</p>
+					<p id="introducao-text">Um fabrication laboratory (Fab Lab) é uma oficina de prototipagem rápida de objetos físicos e está inserido em uma rede mundial de quase duas centenas de laboratórios no mundo. Ele se destina a todos que querem passar mais rapidamente da fase do conceito ao protótipo, assim como, aos designers, aos artistas e aos estudantes que desejam experimentar e enriquecer seus conhecimentos práticos em eletrônica.
+					</br>
+					As Fab Labs buscam incentivar o empoderamento e capacidade criativa dos seus frequentadores, assim como estimular o aprendizado das tecnologias a partir da criação de protótipos, priorizando abordagens colaborativas e transdisciplinares.
+				    </br>
+                    No Brasil, existem espalhadas pelo seu território algumas Fab Labs, por exemplo, em Brasília, em Porto Alegre, em Recife.</p>
+				</div>
+
+				<div id="conteudo-projeto">
+						<div id="caixa-one">
+							<p class="caixa-texto-title">O QUE É UMA ECO FAB LAB</p>
+							<p class="caixa-texto-texto">É uma Fab Lab Ecológica, ou seja, uma Fab Lab que além de oferecer cursos, workshops e palestras irá disponibilizar um espaço para que a comunidade possa fazer o uso de máquinas (impressora 3d, Cortadora a Laser, Cotadora de vinil, etc.) adequadas para a produção de protótipos, juntamente com o uso de materiais reutilizáveis como matéria-prima. Porém tudo isso com a vantagem do uso de resíduos biodigitais e resíduos sólidos (plástico, borracha, madeira, metal, vidro), que favorece um menor custo de instalação e de operação em relação a uma Fab Lab tradicional.
+							</p>
+						</div>
+
+						<div id="caixa-two">
+							<p class="caixa-texto-title">QUAIS AS POSSIBILIDADES</p>
+							<p class="caixa-texto-texto">O Brasil é o país que possui a quarta maior população do mundo de “nativos digitais”, jovens que cresceram acompanhando de perto a expansão da internet e estão acostumados às muitas mudanças trazidas pela web. Por outro lado, amarga possuir baixo índice de escolaridade e variados problemas socioeconômicos. 
+							As Eco Fab Labs facultam a formação de um ecossistema que favorece:
+							</p>
+
+							<p class="caixa-texto-texto paragrafo-two">
+							Um país com menos resíduos biodigitais e sólidos;
+							</p>
+
+							<p class="caixa-texto-texto paragrafo-two">
+							Uma sociedade com consciência de existência da reutilização dos resíduos bio-digitais;
+							</p>
+
+							<p class="caixa-texto-texto paragrafo-two">
+							Um espaço que recebe doações de resíduos digitais e que os transformam em novos produtos;
+							</p>
+
+							<p class="caixa-texto-texto paragrafo-two">
+							Jovens no mercado de trabalho com experiência no manuseio de máquinas tecnológicas modernas, como: impressora 3D, cortadora a laser, cortadora de vinil e etc
+							</p>
+
+							<p class="caixa-texto-texto paragrafo-two">
+							Retorno Social: doação de resíduos, educação na separação correta do lixo, pessoas mais preparadas em tecnologias digitais e na construção de protótipos;
+							</p>
+
+							<p class="caixa-texto-texto paragrafo-two">
+							Um país com menos resíduos biodigitais e sólidos;
+							</p>
+
+							<p class="caixa-texto-texto paragrafo-two">
+							Logística Reversa;
+							</p>
+
+							<p class="caixa-texto-texto paragrafo-two">
+							Prevenção do meio ambiente;
+							</p>
+						</div>
+
+						<div id="caixa-three">
+							<p class="caixa-texto-title">QUEM É O PÚBLICO</p>
+							<p class="caixa-texto-texto">Empreendedores, pesquisadores, alunos, designers, artistas plásticos e startups digitais, comunidade em geral.</br>
+							Você não precisa ser um engenheiro ou um designer para frequentar um Fab Lab. Qualquer pessoa, mesmo sem formação específica, pode participar e contribuir com suas ideias e projetos, colocando a mão na massa e aprendendo como utilizar as máquinas e ferramentas.
+							</p>
+						</div>
+
+						<div id="caixa-four">
+							<p class="caixa-texto-title">QUATRO</p>
+							<p class="caixa-texto-texto">asdasdasdaasd asdasdasdas asdasdasd asdasdasdasdas asdasdasd asdasdasd</br>
+							asdasdasdasdasdas asdasdasdasdasdasdas asdasdsadasdasdasda asas asdasd</br>
+							asdasdasdasdas asdasdasdasdas asdas asdasdsa asdasd asdasdadadasdas asa</br>
+							asdasdasdaasd asdasdasdas asdasdasd asdasdasdasdas asdasdasd asdasdasd</br>
+							asdasdasdasdasdas asdasdasdasdasdasdas asdasdsadasdasdasda asas asdasd</br>
+							FOUR
+							</p>
+						</div>
+				</div>
+
+				<div id="projeto-explore">
+
+					<div id="explore">
+						<div id="div-one"><p id="title-one" class="title-explore">ECO FAB LAB</p></div>
+						<div id="div-two"><p id="title-two" class="title-explore">POSSIBILIDADES</p></div>
+						<div id="div-three"><p id="title-three" class="title-explore">PÚBLICO</p></div>
+						<div id="div-four"><p id="title-four" class="title-explore">TITULO4</p></div>
+					</div>
+				</div>
+			</section>
+	</div>
+</body>
+</html>

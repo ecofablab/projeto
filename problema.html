@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+	<!--*****CHARSET*****-->
+
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=divice-width, initial-scale=1.0">
+
+	<!--*****CSS*****-->
+
+	<link rel="stylesheet" href="css/style_problema.css" type="text/css">
+
+	<!--*****JQUERY*****-->
+
+	<script type="text/javascript" src="js/jquery-2.1.4.min.js"></script>
+
+	<!--*****TITULO DO SITE*****-->
+
+	<title>Eco FabLabs</title>
+
+	<!--*****JAVASCRIPT*****-->
+
+	<script type="text/javascript">
+	$(document).ready(function(){
+
+		$("#div-one").click(function(){
+			$("#div-one").css({"border": "2px solid #fff"});
+			$("#div-two").css({"border": "none"});
+			$("#div-three").css({"border": "none"});
+			$("#div-four").css({"border": "none"});
+
+			$("#conteudo-problema").css({"display": "block"});
+
+			$("#caixa-one").css({"display": "block"});
+			$("#caixa-two").css({"display": "none"});
+			$("#caixa-three").css({"display": "none"});
+			$("#caixa-four").css({"display": "none"});
+		});
+
+		$("#div-two").click(function(){
+			$("#div-one").css({"border": "none"});
+			$("#div-two").css({"border": "2px solid #fff"});
+			$("#div-three").css({"border": "none"});
+			$("#div-four").css({"border": "none"});
+
+			$("#conteudo-problema").css({"display": "block"});
+			
+			$("#caixa-one").css({"display": "none"});
+			$("#caixa-two").css({"display": "block"});
+			$("#caixa-three").css({"display": "none"});
+			$("#caixa-four").css({"display": "none"});
+		});
+
+		$("#div-three").click(function(){
+			$("#div-one").css({"border": "none"});
+			$("#div-two").css({"border": "none"});
+			$("#div-three").css({"border": "2px solid #fff"});
+			$("#div-four").css({"border": "none"});
+
+			$("#conteudo-problema").css({"display": "block"});
+			
+			$("#caixa-one").css({"display": "none"});
+			$("#caixa-two").css({"display": "none"});
+			$("#caixa-three").css({"display": "block"});
+			$("#caixa-four").css({"display": "none"});
+		});
+
+		$("#div-four").click(function(){
+			$("#div-one").css({"border": "none"});
+			$("#div-two").css({"border": "none"});
+			$("#div-three").css({"border": "none"});
+			$("#div-four").css({"border": "2px solid #fff"});
+
+			$("#conteudo-problema").css({"display": "block"});
+			
+			$("#caixa-one").css({"display": "none"});
+			$("#caixa-two").css({"display": "none"});
+			$("#caixa-three").css({"display": "none"});
+			$("#caixa-four").css({"display": "block"});
+		});
+	});
+</script>
+
+</head>
+<body>
+	<div id="container">
+		
+		<header>
+			<div id="nav">
+				<nav id="header_nav">
+					<li class="active">
+						<a href="index.html" class="home-nav">INÍCIO<div class="responsive"></div></a>
+					</li>
+					<li>
+						<a href="projeto.html" class="projeto-nav">O PROJETO<div class="responsive"></div></a>
+					</li>
+					<li>
+						<a href="problema.html" class="problema-nav">O PROBLEMA<div id="selected"></div></a>
+					</li>
+					<li>
+						<a href="ecotruck.html" class="ecotruck-nav">ECOTRUCK</a>
+					</li>
+				</nav>
+			</div>
+		</header>
+
+			<!--*****PROBLEMA*****-->
+
+			<section id="problema">
+				<div id="problema-pag">
+					<div id="div-one" class="btns-problema"><p id="title-one" class="title-explore">TITULO1</p></div>
+					<div id="div-two" class="btns-problema"><p id="title-two" class="title-explore">TITULO2</p></div>
+					<div id="div-three" class="btns-problema"><p id="title-three" class="title-explore">TITULO3</p></div>
+					<div id="div-four" class="btns-problema"><p id="title-four" class="title-explore">TITULO4</p></div>
+				</div>
+
+				<div id="conteudo-problema">
+						<div id="caixa-one">
+							<p class="caixa-texto-title">UM</p>
+							<p class="caixa-texto-texto">asdasdasdaasd asdasdasdas asdasdasd asdasdasdasdas asdasdasd asdasdasd</br>
+							asdasdasdasdasdas asdasdasdasdasdasdas asdasdsadasdasdasda asas asdasd</br>
+							asdasdasdasdas asdasdasdasdas asdas asdasdsa asdasd asdasdadadasdas asa</br>
+							asdasdasdaasd asdasdasdas asdasdasd asdasdasdasdas asdasdasd asdasdasd</br>
+							asdasdasdasdasdas asdasdasdasdasdasdas asdasdsadasdasdasda asas asdasd</br>
+							ONE
+							</p>
+						</div>
+
+						<div id="caixa-two">
+							<p class="caixa-texto-title">DOIS</p>
+							<p class="caixa-texto-texto">asdasdasdaasd asdasdasdas asdasdasd asdasdasdasdas asdasdasd asdasdasd</br>
+							asdasdasdasdasdas asdasdasdasdasdasdas asdasdsadasdasdasda asas asdasd</br>
+							asdasdasdasdas asdasdasdasdas asdas asdasdsa asdasd asdasdadadasdas asa</br>
+							asdasdasdaasd asdasdasdas asdasdasd asdasdasdasdas asdasdasd asdasdasd</br>
+							asdasdasdasdasdas asdasdasdasdasdasdas asdasdsadasdasdasda asas asdasd</br>
+							TWO
+							</p>
+						</div>
+
+						<div id="caixa-three">
+							<p class="caixa-texto-title">TRES</p>
+							<p class="caixa-texto-texto">asdasdasdaasd asdasdasdas asdasdasd asdasdasdasdas asdasdasd asdasdasd</br>
+							asdasdasdasdasdas asdasdasdasdasdasdas asdasdsadasdasdasda asas asdasd</br>
+							asdasdasdasdas asdasdasdasdas asdas asdasdsa asdasd asdasdadadasdas asa</br>
+							asdasdasdaasd asdasdasdas asdasdasd asdasdasdasdas asdasdasd asdasdasd</br>
+							asdasdasdasdasdas asdasdasdasdasdasdas asdasdsadasdasdasda asas asdasd</br>
+							THREE
+							</p>
+						</div>
+
+						<div id="caixa-four">
+							<p class="caixa-texto-title">QUATRO</p>
+							<p class="caixa-texto-texto">asdasdasdaasd asdasdasdas asdasdasd asdasdasdasdas asdasdasd asdasdasd</br>
+							asdasdasdasdasdas asdasdasdasdasdasdas asdasdsadasdasdasda asas asdasd</br>
+							asdasdasdasdas asdasdasdasdas asdas asdasdsa asdasd asdasdadadasdas asa</br>
+							asdasdasdaasd asdasdasdas asdasdasd asdasdasdasdas asdasdasd asdasdasd</br>
+							asdasdasdasdasdas asdasdasdasdasdasdas asdasdsadasdasdasda asas asdasd</br>
+							FOUR
+							</p>
+						</div>
+				</div>
+
+			</section>		
+	</div>
+</body>
+</html>

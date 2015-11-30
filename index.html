@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+	<!--*****CHARSET*****-->
+
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=divice-width, initial-scale=1.0">
+
+	<!--*****CSS*****-->
+
+	<link rel="stylesheet" href="css/style.css" type="text/css">
+
+	<!--*****JQUERY*****-->
+
+	<script type="text/javascript" src="js/jquery-2.1.4.min.js"></script>
+
+	<!--*****TITULO DO SITE*****-->
+
+	<title>Eco FabLabs</title>
+
+	<!--*****JAVASCRIPT*****-->
+
+	<script type="text/javascript">
+	$(document).ready(function(){
+
+		$(".one").click(function(){
+			$("body").css({"background-color":"#52b3d9"});
+
+			$("#scene_one").css({"display": "block"});
+			$("#scene_two").css({"display": "none"});
+			$("#scene_three").css({"display": "none"});
+
+
+			$(".one").addClass("ativo").css({"background-image": "url(imagem/bullet-1-active.png)"});
+			$(".two").removeClass("ativo").css({"background-image": "url(imagem/bullet-2.png)"});
+			$(".three").removeClass("ativo").css({"background-image": "url(imagem/bullet-3.png)"});
+		});
+
+		$(".two").click(function(){
+			$("body").css({"background-color":"#3fc390"});
+
+			$("#scene_one").css({"display": "none"});
+			$("#scene_two").css({"display": "block"});
+			$("#scene_three").css({"display": "none"});
+
+			$(".one").removeClass("ativo").css({"background-image": "url(imagem/bullet-1.png)"});
+			$(".two").addClass("ativo").css({"background-image": "url(imagem/bullet-2-active.png)"});
+			$(".three").removeClass("ativo").css({"background-image": "url(imagem/bullet-3.png)"});
+		});
+
+		$(".three").click(function(){
+			$("body").css({"background-color":"#E7856D"});
+
+			$("#scene_one").css({"display": "none"});
+			$("#scene_two").css({"display": "none"});
+			$("#scene_three").css({"display": "block"});
+
+			$(".one").removeClass("ativo").css({"background-image": "url(imagem/bullet-1.png)"});
+			$(".two").removeClass("ativo").css({"background-image": "url(imagem/bullet-2.png)"});
+			$(".three").addClass("ativo").css({"background-image": "url(imagem/bullet-3-active.png)"});
+		});
+
+		$(".btn-descubra").mouseover(function(){
+			$(".btn-descubra").css({"background-image": "url(imagem/descubra-active.png)"});
+		});
+
+		$(".btn-descubra").mouseout(function(){
+			$(".btn-descubra").css({"background-image": "url(imagem/descubra.png)"});
+		});
+
+
+		$(".btn-next").click(function(){
+			if($("#problema-two div:visible").next().length !=0){
+				$("#problema-two div:visible").next().show().prev().hide();
+			}else{
+				$("#problema-two div:visible").hide();
+            	$("#problema-two div:first").show();	
+			}
+		});
+
+		$(".btn-back").click(function(){
+			if($("#problema-two div:visible").prev().length !=0){
+				$("#problema-two div:visible").prev().show().next().hide();
+			}else{
+				$("#problema-two div:visible").hide();
+            	$("#problema-two div:last").show();
+			}
+		});
+
+		setInterval(slide,3000);
+
+		function slide(){
+			if($(".ativo").next().size()){
+				if($(".ativo").next().attr('class') == "two bullet"){
+					$(".ativo").css({"background-image": "url(imagem/bullet-1.png)"}).removeClass("ativo");
+					$(".two").fadeIn().css({"background-image": "url(imagem/bullet-2-active.png)"}).addClass("ativo");	
+
+					$("body").css({"background-color":"#3fc390"});
+
+					$("#scene_one").css({"display": "none"});
+					$("#scene_two").css({"display": "block"});
+					$("#scene_three").css({"display": "none"});
+				}
+
+				else if($(".ativo").next().attr('class') == "three bullet"){
+					$(".ativo").css({"background-image": "url(imagem/bullet-2.png)"}).removeClass("ativo").next().fadeIn().addClass("ativo").css({"background-image": "url(imagem/bullet-6-active.png)"});
+
+					$("body").css({"background-color":"#E7856D"});
+
+					$("#scene_one").css({"display": "none"});
+					$("#scene_two").css({"display": "none"});
+					$("#scene_three").css({"display": "block"});
+				}
+
+			}else {
+				$(".ativo").css({"background-image": "url(imagem/bullet-3.png)"}).removeClass("ativo");	
+				$(".one").fadeIn().css({"background-image": "url(imagem/bullet-1-active.png)"}).addClass("ativo");
+
+				$("body").css({"background-color":"#52b3d9"});
+
+				$("#scene_one").css({"display": "block"});
+				$("#scene_two").css({"display": "none"});
+				$("#scene_three").css({"display": "none"});
+			}	
+		}
+	});
+</script>
+
+</head>
+<body>
+	<div id="container">
+		
+		<header>
+			<div id="nav">
+				<nav id="header_nav">
+					<li class="active">
+						<a href="index.html" class="home-nav">INÍCIO<div id="selected"></div></a>
+					</li>
+					<li>
+						<a href="projeto.html" class="projeto-nav">O PROJETO<div class="responsive"></div></a>
+					</li>
+					<li>
+						<a href="problema.html" class="problema-nav">O PROBLEMA<div class="responsive"></div></a>
+					</li>
+					<li>
+						<a href="ecotruck.html" class="ecotruck-nav">ECOTRUCK</a>
+					</li>
+				</nav>
+			</div>
+		</header>
+
+		<div id="screens">
+
+			<!--*****INÍCIO*****-->
+
+			<section id="home">
+				<div id="scenes">
+					<div id="scene_one">
+						<p class="title">ECO FAB LAB</p>
+						<p id="text-one" class="text">UM LABORATÓRIO DE PROTOTIPAGEM RÁPIDA ECOLÓGICA</p>
+
+						<div id="descubra" class="btn-projeto">
+							<a class="buttom-descubra" href="projeto.html"><div class="btn-descubra"></div></a>
+						</div>
+
+						<div class="nav_scenes">
+							<div class="one bullet ativo"></div>
+							<div class="two bullet"></div>
+							<div class="three bullet"></div>
+						</div>
+					</div>
+
+					<div id="scene_two">
+						<p class="title">ONDE TUDO COMEÇA...</p>
+						<p id="text-two" class="text">CONHEÇA, SONHE E FAÇA. TUDO COMEÇA ASSIM!</p>
+
+						<div id="descubra" class="btn-problema">
+							<a class="buttom-descubra" href="problema.html"><div class="btn-descubra"></div></a>
+						</div>
+
+						<div class="nav_scenes">
+							<div class="one bullet"></div>
+							<div class="two bullet"></div>
+							<div class="three bullet"></div>
+						</div>
+					</div>
+
+					<div id="scene_three">
+						<p class="title">ECOTRUCK</p>
+						<p id="text-three" class="text">ECOFABLABS DO OIAPOQUE AO CHUÍ</p>
+
+						<div id="descubra" class="btn-ecotruck">
+							<a class="buttom-descubra" href="ecotruck.html"><div class="btn-descubra"></div></a>
+						</div>
+
+						<div class="nav_scenes">
+							<div class="one bullet"></div>
+							<div class="two bullet"></div>
+							<div class="three bullet"></div>
+						</div>
+					</div>
+				</div>
+			</section>
+		</div>
+	</div>
+</body>
+</html>

@@ -1,0 +1,244 @@
+*{
+	padding: 0;
+    margin: 0;
+    border: 0;
+    list-style: none;
+}
+
+@font-face {
+    font-family: 'AdamDrawn';
+    src: url('../fonts/adamfont-webfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'DrawnBody';
+    src: url('../fonts/drawnbody-webfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body{
+	max-width:1200px; /*largura máxima do layout*/
+	width: 90%; /*ajuste do layout à tela*/
+	height: 600px;
+	background-image: url('../imagem/bg.jpg'); 
+}
+
+header{
+	width: 100%;
+	margin: 3% 0 0 80%;
+}
+
+
+#nav li{
+	display: inline-block;
+	margin-left: 1.666%;	
+}
+
+#nav li a{
+	font-size: 1.125em;
+	font-family: 'AdamDrawn';
+	text-decoration: none;
+	color: #fff;
+}
+
+#nav li a:hover{
+	color: #bcbcbc;
+}
+
+#selected{
+	width: 100%;
+	height: 1px;
+	background-color: #fff;
+}
+
+.title-explore{
+	font-family: 'DrawnBody';
+	font-size: 1.125em;
+	color: #fff;
+	margin: 3.5% 0 0 1.8%;
+	position: absolute;
+
+}
+
+#problema-pag{
+	margin: 10% 0 0 10%;
+}
+
+.btns-problema{
+	display: inline-block;
+	margin-left: 10%;
+}
+
+#div-one{
+	width: 12%;
+	height: 100px;
+	background-color: #ff7700;
+}
+
+#div-two{
+	width: 12%;
+	height: 100px;
+	background-color: #86c700;
+}
+
+#div-three{
+	width: 12%;
+	height: 100px;
+	background-color: #f07a5c;
+}
+
+#div-four{
+	width: 12%;
+	height: 100px;
+	background-color: #373737;	
+}
+
+#conteudo-problema{
+	width: 50%;
+	height: 296px;
+	margin: 5% 0 0 32%;
+	display: none;
+}
+
+.caixa-texto-title{
+	font-family: 'AdamDrawn';
+	font-size: 2.222em;
+	margin: 0 0 0 45%;
+	color: #fff;
+}
+
+.caixa-texto-texto{
+	font-family: 'DrawnBody';
+	margin: 0.625% 0 0 0.625%;
+	color: #fff;
+}
+
+/*
+1200px – Desktops, notebooks com monitores widescreen
+***********************************************************/
+@media screen and (max-width: 1200px){
+  
+}
+/*
+960px – Tablets no formato paisagem e alguns monitores mais antigos
+***********************************************************/
+@media screen and (max-width: 960px){
+	header{
+		margin: 3% 0 0 75%;
+	}
+
+	#problema-pag{
+		margin: 10% 0 0 20%;
+	}
+
+	.btns-problema{
+		margin-left: 5%;
+	}
+
+	#div-one{
+		width: 15%;
+	}
+
+	#div-two{
+		width: 15%;		
+	}
+
+	#div-three{
+		width: 15%;		
+	}
+
+	#div-four{
+		width: 15%;		
+	}
+
+	#conteudo-problema{
+		width: 80%;
+		margin: 5% 0 0 24.5%;
+	}
+
+	.caixa-texto-title{
+		margin: 0 0 0 35%;
+	}
+}
+/*
+768px – Tablets no formato retrato, como o iPad
+***********************************************************/
+@media screen and (max-width: 768px){
+	header{
+		margin: 3% 0 0 65%;
+	}
+
+	#conteudo-problema{
+		width: 80%;
+		margin: 5% 0 0 16%;
+	}
+
+	.caixa-texto-title{
+		margin: 0 0 0 43%;
+	}
+}
+/*
+480px – Smartphones no formato paisagem com tela pequena
+***********************************************************/
+@media screen and (max-width: 480px){
+	header{
+		margin: 3% 0 0 28%;
+	}
+
+	#problema-pag{
+		margin: 10% 0 0 33%;
+	}
+
+	.btns-problema{
+		margin-left: 0;
+	}
+
+	#div-one{
+		width: 35%;
+	}
+
+	#div-two{
+		width: 35%;		
+	}
+
+	#div-three{
+		width: 35%;		
+	}
+
+	#div-four{
+		width: 35%;		
+	}
+
+	#conteudo-problema{
+		width: 80%;
+		margin: 5% 0 0 18%;
+	}
+
+	.caixa-texto-texto{
+		margin: 0 0 0 10%;
+	}
+}
+/*
+320px – Smartphones no formato retrato com tela pequena
+***********************************************************/
+@media screen and (max-width: 320px){
+	header{
+		margin: 3% 0 0 3.5%;
+	}
+
+	#nav li{
+		display: block;
+		text-align: center;
+		font-size: 1.5em;
+		margin: 5% 0 0 0;
+	}
+
+	.responsive{
+		width: 100%;
+		height: 1px;
+		background-color: #fff;
+	}
+}
